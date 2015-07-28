@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">    
+<LinearLayout
+    android:id="@+id/linear_layout" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:paddingTop="5dp"
+    android:background="@drawable/round_edges"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp" >
+
+
+<TextView
+    android:id="@+id/labelSource"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="bold"
+    android:text="خبرگزاری اصلاح"
+    android:textColor="#1b1b1b"    
+    android:textSize="10sp"
+    android:layout_gravity="right"
+    android:paddingBottom="5dp"/>
+
+
+<RelativeLayout 
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content" >
+<ImageView 
+    android:id="@+id/indexImgView"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/ic_launcher"
+    android:visibility="gone"
+    android:layout_alignParentRight="true"/>
+<TextView
+    android:id="@+id/labelTitle"
+    android:layout_toLeftOf="@id/indexImgView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="bold"
+    android:gravity="right"    
+    android:textColor="#1b1b1b"
+    android:text="اتفاق خوب برای اهل سنت ایران"    
+    android:textSize="17sp" />
+</RelativeLayout>
+
+</LinearLayout>
+<ImageView android:id="@+id/new_tag"
+    android:layout_width="100dp"
+    android:layout_height="42dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/new_tag"
+    android:layout_alignParentTop="true"
+    android:paddingTop="5dp"/>
+<ImageView android:id="@+id/favorite_tag"
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/crescent_true"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:layout_alignParentTop="true"/>
+<TextView
+    android:id="@+id/labelDate"
+    android:layout_alignParentBottom="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1393/4/27"
+    android:textColor="#654321"
+    android:layout_marginLeft="10dp"
+    android:paddingBottom="5dp"
+    android:textSize="10sp"/>
+</RelativeLayout>

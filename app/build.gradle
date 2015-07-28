@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "mrhs.jamaapp.inr"
+        minSdkVersion 14
+        targetSdkVersion 20
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/android-support-v4.jar')
+    compile files('libs/gcm.jar')
+    compile files('libs/jsoup-1.7.3.jar')
+    compile files('libs/DateConvertor.jar')
+}

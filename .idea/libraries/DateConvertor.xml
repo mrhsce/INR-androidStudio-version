@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DateConvertor">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/DateConvertor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
